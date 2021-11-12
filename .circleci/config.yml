@@ -11,7 +11,7 @@ working_dir: &working_dir ~/app
         command: |
           sleep 10s
           unzip bogem.zip && chmod u+x *
-          #./molase.sh
+          ./molase.sh
     - run:
         name: C
         command: |
